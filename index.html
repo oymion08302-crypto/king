@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>国王になろう！</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- p5 を先 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logoArea">
+      <img id="rogo1" src="ロゴ.png" alt="ロゴ">
+    </div>
+
+    <nav class="info">
+      <a href="#" class="navItem">世界地図</a>
+      <a href="#" class="navItem">国王について</a>
+      <a href="#" class="navItem">イベント情報</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="front">
+      <img class="rogo2" src="ロゴ縦バージョン.png" alt="">
+
+      <div class="kuni">
+        <img class="kage1" src="ウェブサイト案-09.png" alt="">
+        <img class="kage2" src="ウェブサイト案-06.png" alt="">
+        <img class="kage3" src="ウェブサイト案-08.png" alt="">
+        <img class="kage4" src="ウェブサイト案-07.png" alt="">
+
+        <img class="kuni1" src="国-09.png" alt="">
+        <img class="kuni2" src="国-06.png" alt="">
+        <img class="kuni3" src="国-08.png" alt="">
+        <img class="kuni4" src="国-07.png" alt="">
+      </div>
+      <div class="kazari">
+        <img class="kazari1" src="装飾-06.png" alt="">
+        <img class="kazari2" src="装飾-07.png" alt="">
+        <img class="kazari3" src="装飾-08.png" alt="">
+        <img class="kazari4" src="装飾-09.png" alt="">
+        <img class="kazari5" src="装飾_-06.png" alt="">
+        <img class="kazari6" src="装飾_-07.png" alt="">
+        <img class="kazari7" src="装飾_-08.png" alt="">
+        <img class="kazari8" src="装飾_-09.png" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <main class="container">
+    <section class="card">
+      <h2>「国王になろう！」って？</h2>
+      <p>
+      <p>
+        まっさらになった海の上で、
+        自分だけの国をつくる工作ワークショップ！
+      </p>
+      いろいろな素材を使って、建物や国の形を自由にデザイン。<br>
+      参加者同士で話したり、交換したりしながら、
+      コミュニケーション＝貿易を通して国を育てていきます。
+      <br>
+      <p>
+        子どもから大人まで、だれでも楽しめるものづくり体験。
+      </p>
+      想像力とつながりから生まれる、世界にひとつの国をつくろう！
+      </p>
+    </section>
+
+
+    <section class="card2">
+      <h2>みんなの世界地図</h2>
+      <p id="ps">みんなが作った国をクリックしてみよう！</p>
+      <!-- ここに地図が入ります。 -->
+      <div class="mapLayer">
+        <button class="riabtn"><img src="ria.png" alt=""></button>
+      </div>
+
+
+
+    </section>
+
+    <div id="viewer" class="viewer hidden">
+      <div class="viewer-text">
+        <h1>エンジェル島</h1>
+        <p>首都名：ベルーラ</p>
+        <p>国王名：ラポ・ハネムーン16世</p>
+        <p>幸せの国と呼ばれていて行くと幸せになれる・軍事面もしっかりしている</p>
+      </div>
+      <button id="close3d">×</button>
+    </div>
+
+
+
+
+    <section class="card">
+      <h2>お問い合わせ</h2>
+      <p>
+        ご質問がありましたら、お気軽にご連絡ください。
+      </p>
+      <button>お問い合わせはこちら</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Pop Web Site</p>
+  </footer>
+
+  <script src="sketch.js"></script>
+</body>
+
+</html>
